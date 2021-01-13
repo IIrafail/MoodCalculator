@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the mood</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div id="app" class="app">
+        <h1>Mood calculator</h1>
+        <hr>
+        <main class="main">
+            <div class="box">
+                <h2>Enter the text</h2>
+                <textarea v-model="input" placeholder="Your text here!" cols="50" rows="10" class="txtInput"></textarea>
+                <p>Minimum 10 characters</p>
+            </div>
+            <div class="box moodbox" v-if="mood">
+                <h2 class="moodTitle">Your text is most likely {{mood}}</h2>
+                <img v-bind:src="source"  alt="mood" class="mood"/>
+            </div>
+            <div class="break"></div>
+            <button class="calculate" v-on:click="fetchMood"> Calculate</button>
+
+        </main>
+        <div style="flex-grow: 2;"></div>
+        <footer>
+            <p>Made by Rafail Gkiolntas</p>
+            <p>Credits to <a href="https://github.com/sharadcodes">Sharad Raj</a> for the API and to <a href="https://www.flaticon.com/authors/freepik">freepik</a> for the icons!</p>
+            <p>Made with Vue.js</p>
+        </footer>
+    </div>
+    
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

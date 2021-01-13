@@ -1,0 +1,86 @@
+.app{
+    width: 60vw;
+    background-color: #0a0814;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    color: #F5622C;
+}
+body{
+    background-color: #404364;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0C97B3;
+    box-sizing: border-box;
+}
+
+.calculate{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    width: 10rem;
+    height: 3rem;
+    background-color: #F5622C;
+    font-weight: bold;
+    color: #404364;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+.break{
+    flex-basis: 100%;
+}
+.calculate:hover{
+    background-color: #ff916a;
+}
+
+.txtInput{
+    background-color: #0C97B3;
+    color: #413963;
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    resize: none;
+    overflow: auto;
+}
+hr{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.moodbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.mood{
+    width: 5rem;
+}
+footer{
+    
+    bottom: 0;
+    height: 5rem;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .app {
+        width: 100vw;
+    }
+  } 
